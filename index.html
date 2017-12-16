@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Free Flat</title>
+    <link rel="stylesheet" href="styles/jquery.range.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <script src="scripts/echarts.common.min.js"></script>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/jquery.range.js"></script>
+    <script src="scripts/global.js"></script>
+    <script src="scripts/createChart.js"></script>
+</head>
+<body>
+    <aside>
+        <div class="brand">Free Flat UI</div>
+        <nav>
+            <header>Dashboard</header>
+            <div class="tree">
+            </div>
+        </nav>
+    </aside>
+    <div id="main">
+        <header>
+            <ul class="clearfix">
+                <li class="user">Username</li>
+                <li class="log">Log out</li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="graphs">
+                <header>
+                    <div class="left-tri"></div>
+                    Graphs & charts
+                    <div class="right-tri"></div>
+                </header>
+                <div class="main-content">
+                    <div class="chart-wrapper clearfix">
+                        <div class="title">Traffic</div>
+                        <div id="line-chart"></div>
+                    </div>
+                    <div class="chart-wrapper clearfix">
+                        <div class="title">Visitors</div>
+                        <div class="percent">
+                            <div class="fl">60%</div>
+                            <div class="fl">40%</div>
+                        </div>
+                        <div class="visitor">
+                            <span style="background:#9babda"></span>
+                            New visitors: <b>6</b>
+                        </div>
+                        <div class="visitor">
+                            <span style="background:#7bcfbb"></span>
+                            Returning visitors: <b>6</b>
+                        </div>
+                    </div>
+                    <div class="chart-wrapper clearfix">
+                        <div class="title">Traffic sources</div>
+                        <div id="pie-chart"></div>
+                        <div class="legend fr">
+                            <div class="item-info">
+                                <span style="background:#9babda"></span>
+                                Search engines: <b>10</b>
+                            </div>
+                            <div class="item-info">
+                                <span style="background:#7bcfbb"></span>
+                                Referrals: <b>5</b>
+                            </div>
+                            <div class="item-info">
+                                <span style="background:#f3c17f"></span>
+                                Direct: <b>5</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="control">
+                <header>
+                    <div class="left-tri"></div>
+                    Form & input elements & controls
+                    <div class="right-tri"></div>
+                </header>
+                <div class="main-content">
+                    <div class="input-wrapper clearfix">
+                        <div class="intro fl">Text field</div>
+                        <input class="fr" id="txt-field" type="text" name="field" placeholder="must fill out">
+                        <div class="alert">*</div>
+                    </div>
+                    <div class="input-wrapper clearfix">
+                        <div class="intro fl">Select list</div>
+                        <div class="select-wrapper fr">
+                            <div class="arrow"></div>
+                            <select>
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-wrapper clearfix">
+                        <div class="message fr">
+                            <p>Message</p>
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="ch-radio clearfix">
+                            <input id="c1" type="checkbox" name="cc">
+                            <label for="c1">
+                                <span>Check it out</span>
+                                <span class="option"></span>
+                            </label>
+                            <div class="radios fl">
+                                <span>Stereo</span>
+                                <input id="r1" type="radio" name="rr" checked>
+                                <label for="r1"><span></span></label>
+                                <input id="r2" type="radio" name="rr">
+                                <label for="r2"><span></span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="intro fl range">Range slider</div>
+                        <div class="slider fl">
+                            <input type="hidden" class="range-slider" value="25, 75">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="intro fl">Switches</div>
+                        <div class="switches fr">
+                            <label class="switch fl">
+                                <input type="checkbox" checked>
+                                <span class="s-slider">
+                                    <span>off</span>
+                                    <span>on</span>
+                                </span>
+                            </label>
+                            <label class="switch fl">
+                                <input type="checkbox">
+                                <span class="s-slider">
+                                    <span>off</span>
+                                    <span>on</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <button type="button">Button</button>
+                        <button type="button">Hover</button>
+                        <button type="button">Down</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
